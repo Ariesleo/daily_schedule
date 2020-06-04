@@ -195,7 +195,7 @@ body{
     width:380px;
     height: 450px;
     max-height:350px;
-    background-color:whitesmoke;
+    background-color:white;
     overflow: auto;
 }
 .content::-webkit-scrollbar { 
