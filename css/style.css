@@ -1,0 +1,330 @@
+/* ------------ youtube.com/CodeExplained ------------ */
+body{
+    padding: 0;
+    margin: 0;
+    //background-color: rgba(0,0,0,0.1);
+    background: #262626;
+    font-family: 'Titillium Web', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+}
+
+/* ------------ container ------------ */
+.container{
+    padding:10px;
+    width:380px;
+    margin:0 auto;
+    margin-top: 30px;
+    
+}
+
+/* ------------ header ------------ */
+.header{
+    width: 380px;
+    height:280px;
+    background-color: rgba(228, 194, 2, 0.979);
+    //background-image: url('../img/bg1.jpg');
+    background-size: 100% 200%;
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+
+
+/*---------------sidebar of alarm content--------*/
+.sidebar {
+    height: 10%;
+    width: 0;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:rgba(228, 194, 2, 0.979);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 30px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: black;
+    text-shadow: 1px 3px 5px #000;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: -25px;
+    right: 55px;
+    font-size: 36px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    margin-top: -15px;
+    margin-left: 340px;
+  }
+
+
+
+/*---------refresh section-------*/
+
+.clear{
+    width : 30px;
+    height: 30px;
+    position: absolute;
+    right:20px;
+    top: 20px;
+}
+.clear i{
+    font-size: 30px;
+    color: #FFF;
+}
+.clear i:hover{
+    cursor: pointer;
+    text-shadow: 1px 3px 5px #000;
+    transform: rotate(45deg);
+}
+
+
+/*weather container control*/
+
+.weather-container{
+    width: 300px;
+    height: 260px;
+    border-radius: 20px;
+    //background-color: #F4F9FF;
+    margin-left: 40px;
+}
+
+.weather-icon{
+    width: 300px;
+    height: 100px;
+}
+
+.weather-icon img{
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+/*tempereature changes here*/
+
+.temperature-value{
+    width: 300px;
+    height:60px;
+    
+}
+
+.temperature-value p{
+    padding: 0;
+    margin: 0;
+    color: whitesmoke;
+    font-size: 4em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.temperature-value p:hover{
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.temperature-value span{
+    color: whitesmoke;
+    font-size: 0.5em;
+}
+.temperature-description p{
+    padding: 0px;
+    margin: 20px;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: cursive;
+    //background-color: blue;
+}
+
+
+/*location section here*/
+.location 
+{
+    margin: -15px;
+    //background-color: green;   
+}
+
+.location p{
+    margin: -20px;
+    padding: 0;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.location p:hover
+{
+    font-size: 1.5em;
+    color: whitesmoke;
+    cursor: pointer;
+    text-shadow: 1px 3px 5px #000;
+}
+
+
+/*-------------this is the date section-----*/
+#date{
+    position: absolute;
+    //margin: -12px;
+    margin-bottom: -10px;
+    bottom: 10px;
+    left: 10px;
+    color: #FFF;
+    font-size: 25px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* ------------ content ------------ */
+.content{
+    width:380px;
+    height: 450px;
+    max-height:350px;
+    background-color:whitesmoke;
+    overflow: auto;
+}
+.content::-webkit-scrollbar { 
+    display: none; 
+}
+.content ul{
+    padding:0;
+    margin:0;
+}
+.item{
+    width:380px;
+    height: 45px;
+    min-height: 45px;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.item i.co{
+    position: absolute;
+    font-size: 25px;
+    padding-left:5px;
+    left:15px;
+    top:10px;
+}
+.item i.co:hover{
+    cursor: pointer;
+}
+.fa-check-circle{
+    color:#6eb200;
+}
+.item p.text{
+    position: absolute;
+    padding:0;
+    margin:0;
+    font-size: 20px;
+    left:50px;
+    top:5px;
+    background-color: #FFF;
+    max-width:285px;
+}
+.lineThrough{
+    text-decoration: line-through;
+    color : #ccc;
+}
+.item i.de{
+    position: absolute;
+    font-size: 25px;
+    right:15px;
+    top:10px;
+}
+.item i.de:hover{
+    color:#af0000;
+    cursor: pointer;
+}
+
+/* ------------ add item ------------ */
+.add-to-do{
+    position: relative;
+    width: 360px;
+    height:40px;
+    background-color: #FFF;
+    padding: 10px;
+    border-top: 1px solid rgba(0,0,0,0.2);
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
+}
+.add-to-do i{
+    position: absolute;
+    font-size: 40px;
+    color: #4162f6;
+}
+
+.add-to-do input{
+    position: absolute;
+    left: 50px;
+    height: 35px;
+    width: 310px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    padding-left:10px;
+}
+.add-to-do input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+.add-to-do input::-moz-placeholder { /* Firefox 19+ */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+.add-to-do input:-ms-input-placeholder { /* IE 10+ */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+.add-to-do input:-moz-placeholder { /* Firefox 18- */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
