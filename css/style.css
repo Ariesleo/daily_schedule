@@ -134,7 +134,7 @@ body{
 }
 
 .temperature-value p:hover{
-    font-style: italic;
+    //font-style: italic;
     font-family: 'Times New Roman', Times, serif;
     
 }
